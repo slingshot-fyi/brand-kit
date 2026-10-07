@@ -1,0 +1,18 @@
+/* Generated from brand/tokens.json by `npm run tokens`. Do not edit. */
+:root {
+  --slingshot-color-paper: oklch(0.99 0 0);
+  --slingshot-color-ink: oklch(0.2 0.003 95);
+  --slingshot-color-stone: oklch(0.5 0.004 95);
+  --slingshot-color-surface: color-mix(in oklab, oklch(0.2 0.003 95) 4%, oklch(0.99 0 0));
+  --slingshot-color-line: color-mix(in oklab, oklch(0.2 0.003 95) 14%, transparent);
+  --slingshot-font-statement: Exposure, Georgia, 'Times New Roman', serif;
+  --slingshot-font-text: Geist, 'Helvetica Neue', Arial, sans-serif;
+  --slingshot-font-label: 'Geist Mono', ui-monospace, Menlo, monospace;
+  --slingshot-size-statement: 34px;
+  --slingshot-size-statement-mobile: 26px;
+  --slingshot-size-text: 15px;
+  --slingshot-size-label: 11px;
+  --slingshot-space-column: 560px;
+  --slingshot-space-section: 88px;
+  --slingshot-space-section-mobile: 64px;
+}

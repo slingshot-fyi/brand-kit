@@ -1,0 +1,32 @@
+{
+  "name": "@slingshot-fyi/brand-kit",
+  "version": "0.1.0",
+  "description": "Slingshot's own brand as an agentic brand system: guides with a reason for every rule, one tokens file, a CLI and an MCP server.",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://slingshot.fyi",
+  "repository": "github:slingshot-fyi/brand-kit",
+  "bin": {
+    "slingshot-brand": "bin/slingshot-brand.mjs",
+    "slingshot-brand-mcp": "mcp/server.mjs"
+  },
+  "files": [
+    "bin",
+    "brand",
+    "dist",
+    "mcp",
+    "src"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "tokens": "node bin/slingshot-brand.mjs tokens --out dist/tokens.css",
+    "check": "node bin/slingshot-brand.mjs check"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "zod": "^4.6.5"
+  }
+}
