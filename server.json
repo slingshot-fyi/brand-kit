@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "fyi.slingshot/brand-kit",
+  "title": "Slingshot brand kit",
+  "description": "Slingshot's brand guides, design tokens and an off-brand colour check, for any MCP client.",
+  "websiteUrl": "https://slingshot.fyi",
+  "repository": {
+    "url": "https://github.com/slingshot-fyi/brand-kit",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@slingshot-fyi/brand-kit",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

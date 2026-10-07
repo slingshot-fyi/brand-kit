@@ -3,6 +3,8 @@
 // An MCP server over stdio, so an agent can look up Slingshot's brand while
 // it works instead of guessing.
 
+import { readFileSync } from 'node:fs'
+
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js'
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js'
 import { z } from 'zod'
@@ -19,7 +21,9 @@ import {
 /** @param {string} text */
 const reply = (text) => ({ content: [{ type: /** @type {const} */ ('text'), text }] })
 
-const server = new McpServer({ name: 'slingshot-brand', version: '0.1.0' })
+// The server reports the package's own version, so a release can't drift.
+const { version } = JSON.parse(readFileSync(new URL('../package.json', import.meta.url), 'utf8'))
+const server = new McpServer({ name: 'slingshot-brand', version })
 
 server.registerTool(
   'brand_guide',

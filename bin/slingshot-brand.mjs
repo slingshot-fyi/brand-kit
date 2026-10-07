@@ -51,7 +51,7 @@ if (command === 'guide') {
     }
   }
   if (offBrand > 0) {
-    console.log(`\n${offBrand} off-brand colour${offBrand === 1 ? '' : 's'}. See brand/color.md.`)
+    console.log(`\n${offBrand} off-brand colour${offBrand === 1 ? '' : 's'}. Run "slingshot-brand guide color" for the palette.`)
     process.exitCode = 1
   }
 } else {

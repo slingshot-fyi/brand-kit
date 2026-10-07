@@ -1,2 +1,7 @@
 node_modules/
 .DS_Store
+.tldr/
+.tldrignore
+# Signing keys for the MCP Registry stay out of the repo.
+*.pem
+*.key

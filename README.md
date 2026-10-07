@@ -12,17 +12,18 @@ Slingshot's own brand, built as an agentic brand system: the same parts the comp
 ## Use it
 
 ```bash
-npm install
-npx slingshot-brand guide            # which guide to read for the task
-npx slingshot-brand guide voice      # one guide
-npx slingshot-brand tokens           # tokens as CSS custom properties
-npx slingshot-brand check src/*.css  # exits 1 if any colour is off-brand
+npx -p @slingshot-fyi/brand-kit slingshot-brand guide            # which guide to read for the task
+npx -p @slingshot-fyi/brand-kit slingshot-brand guide voice      # one guide
+npx -p @slingshot-fyi/brand-kit slingshot-brand tokens           # tokens as CSS custom properties
+npx -p @slingshot-fyi/brand-kit slingshot-brand check src/*.css  # exits 1 if any colour is off-brand
 ```
+
+In a clone of this repository, run `npm install` once and the same commands work as `npx slingshot-brand …`.
 
 Add the MCP server to Claude Code:
 
 ```bash
-claude mcp add slingshot-brand -- node /path/to/brand-kit/mcp/server.mjs
+claude mcp add slingshot-brand -- npx -y @slingshot-fyi/brand-kit
 ```
 
 It exposes three tools: `brand_guide`, `brand_tokens` and `check_colors`.

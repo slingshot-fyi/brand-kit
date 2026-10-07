@@ -2,11 +2,28 @@
   "name": "@slingshot-fyi/brand-kit",
   "version": "0.1.0",
   "description": "Slingshot's own brand as an agentic brand system: guides with a reason for every rule, one tokens file, a CLI and an MCP server.",
+  "mcpName": "fyi.slingshot/brand-kit",
+  "keywords": [
+    "brand",
+    "design-tokens",
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "agents"
+  ],
   "type": "module",
   "license": "MIT",
+  "author": "Slingshot <hey@slingshot.fyi> (https://slingshot.fyi)",
   "homepage": "https://slingshot.fyi",
-  "repository": "github:slingshot-fyi/brand-kit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slingshot-fyi/brand-kit.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "bin": {
+    "brand-kit": "mcp/server.mjs",
     "slingshot-brand": "bin/slingshot-brand.mjs",
     "slingshot-brand-mcp": "mcp/server.mjs"
   },
