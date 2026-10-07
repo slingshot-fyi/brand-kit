@@ -1,6 +1,6 @@
 # Mark
 
-The mark is a slingshot's fork with the stone just above it, already let go: `mark.svg`, drawn on a 24 by 28 grid.
+The mark is a slingshot's fork with the stone just above it, already let go: `mark.svg`, drawn on a 24 by 28 grid. `mark.png` is the same mark on paper at 512px, for avatars.
 
 ## Rules
 
